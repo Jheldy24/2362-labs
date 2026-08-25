@@ -1,12 +1,12 @@
 {
-  "artifact": "aida2362-apex-student-app-2026.08.25-rc1",
+  "artifact": "aida2362-apex-student-app-2026.08.25-rc2",
   "build_process": "scripts/build-release-candidates.py",
   "build_timestamp_utc": "2026-08-25T18:00:00Z",
   "contract_status": "locked",
   "course_source_subdirectory": "apps/aida2362",
-  "course_source_tree_sha256": "938423012fc65b162a39e616a6fae49656d5911b2f4ca36949b209f161db33ce",
+  "course_source_tree_sha256": "c5ae20f4b089beda85b906fd716a08a96e0f25950113b35752cfef0eaf6f7349",
   "finalization_gate": "Final audited lab and project contracts reconciled to the complete Apex GIS application; local operator acceptance and external distribution approval remain.",
-  "source_baseline": "c22a0e28f98a6291affd5a16dc1b6413bbe66ff1",
+  "source_baseline": "558d5e3c5e4d58687810ae4e71a21196453fae07",
   "source_repository": "Apex-Facilities-Platform",
-  "version": "2026.08.25-rc1"
+  "version": "2026.08.25-rc2"
 }

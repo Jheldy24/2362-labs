@@ -60,13 +60,28 @@
       "name": "scikit-learn",
       "type": "library",
       "version": "1.8.0"
+    },
+    {
+      "name": "ipykernel",
+      "type": "library",
+      "version": "7.3.0"
+    },
+    {
+      "name": "nbformat",
+      "type": "library",
+      "version": "5.11.1"
+    },
+    {
+      "name": "nbclient",
+      "type": "library",
+      "version": "0.11.0"
     }
   ],
   "metadata": {
     "component": {
-      "name": "aida2362-apex-student-app-2026.08.25-rc1",
+      "name": "aida2362-apex-student-app-2026.08.25-rc2",
       "type": "application",
-      "version": "2026.08.25-rc1"
+      "version": "2026.08.25-rc2"
     }
   },
   "serialNumber": "urn:uuid:1c94d3d3-2362-4db8-9dbd-1f249e8df362",
