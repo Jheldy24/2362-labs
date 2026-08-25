@@ -1,0 +1,12 @@
+streamlit==1.61.1
+SQLAlchemy==2.0.52
+psycopg[binary]==3.3.4
+pandas==3.0.5
+numpy==2.4.2
+geopandas==1.1.4
+shapely==2.1.2
+pyproj==3.7.2
+rasterio==1.4.4
+matplotlib==3.10.8
+folium==0.20.0
+scikit-learn==1.8.0

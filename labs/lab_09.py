@@ -1,0 +1,3 @@
+from aida2362_app.lab_page import render_lab_page
+
+render_lab_page(9)
