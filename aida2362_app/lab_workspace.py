@@ -42,15 +42,24 @@ def render_lab_workspace(
         "ZIP to D2L. The repository is your working record; D2L is the grading record."
     )
 
-    overview, data_tab, work_tab, evidence_tab = st.tabs(
-        ["Lab contract", "Apex data", "Your implementation", "Evidence & submission"]
+    brief_tab, requirements_tab, data_tab, work_tab, validation_tab, git_tab, submission_tab = st.tabs(
+        ["1 · Brief", "2 · Requirements", "3 · Data & DB", "4 · Build & results", "5 · Test & validate", "6 · Git & evidence", "7 · Submit"]
     )
-    with overview:
-        st.subheader("What you will build")
+    with brief_tab:
+        st.subheader("Apex decision problem")
         st.write(build)
-        st.subheader("Evidence to preserve")
-        st.write(evidence)
+        st.subheader("Professional boundary")
         st.warning(guardrail)
+        st.caption("The official D2L brief and rubric remain authoritative for assessed details and dates.")
+
+    with requirements_tab:
+        st.subheader("Definition of done")
+        st.write(evidence)
+        st.markdown("""
+- **Part A:** frame the decision, state assumptions, build the first working checkpoint, test it, commit it, and preserve the evidence.
+- **Part B:** extend the preserved checkpoint into a production-quality feature and document every change made after Part A.
+- **Professional standard:** the page must explain its result, handle missing or invalid input safely, and avoid unsupported claims.
+""")
         schema = workspace_schema()
         if schema:
             st.success(f"Writable workspace: `{schema}`")
@@ -77,19 +86,41 @@ def render_lab_workspace(
             st.caption(f"Loaded {len(frame):,} synthetic rows through an approved bounded query.")
 
     with work_tab:
+        st.subheader("Student build workspace")
+        st.caption("Edit this lab's `render_student_extension()` function. Show the feature, its results, and the decision it supports here.")
         frame = st.session_state.get(state_key, pd.DataFrame())
         render_student_work(frame.copy())
 
-    with evidence_tab:
-        st.subheader("Required workflow")
-        st.markdown(
-            f"""
+    with validation_tab:
+        st.subheader("Validation gate")
+        st.markdown("""
+- Run the normal case and confirm the result answers the stated decision question.
+- Test empty, missing, malformed, and out-of-range input where relevant.
+- Verify database writes target only your assigned workspace schema.
+- Record assumptions, limitations, uncertainty, and responsible-use concerns.
+- Confirm the page starts from a clean environment without manual repair steps.
+""")
+        st.warning(guardrail)
+
+    with git_tab:
+        st.subheader("Git and evidence gate")
+        st.markdown(f"""
 1. Run `python tools/prepare_lab.py --lab {number}` once.
 2. Complete the evidence files under `evidence/lab_{number:02d}/`.
 3. Put reproducible workspace changes in `workspace_sql/lab_{number:02d}.sql`; never submit a database dump.
-4. Test the app, notebook/code, database query, empty input, and invalid input.
-5. Commit and push the Part A checkpoint before starting Part B.
-6. Build the clean D2L file with `python tools/build_submission.py --lab {number} --part A` or `--part B`.
+4. Commit and push the Part A checkpoint before starting Part B.
+5. Preserve Part A, then record every Part B design change and final validation result.
+""")
+
+    with submission_tab:
+        st.subheader("D2L submission gate")
+        st.markdown(
+            f"""
+1. Confirm the app, code, database query, evidence, and Git status all pass.
+2. Build Part A with `python tools/build_submission.py --lab {number} --part A`.
+3. Build Part B with `python tools/build_submission.py --lab {number} --part B`.
+4. Inspect the generated ZIP and submit that ZIP to the matching D2L assignment.
+5. Keep the private repository as your development history; D2L remains the official grading record.
 """
         )
         st.caption("The submission builder rejects secrets, uncommitted work, and unfinished evidence templates.")
