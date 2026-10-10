@@ -1,0 +1,3 @@
+dataset,publisher,retrieval_date,licence,crs,missing_geometry,integration_status
+facility_points,AIDA 2362,2026-08-13,CC0-1.0,EPSG:4326,0,ready
+legacy_access_paths,,,unknown,,2,quarantine

@@ -1,0 +1,110 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "feature_id": "ZONE-N",
+        "synthetic": true,
+        "zone_name": "North service zone"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -113.815,
+              52.247
+            ],
+            [
+              -113.788,
+              52.247
+            ],
+            [
+              -113.788,
+              52.262
+            ],
+            [
+              -113.815,
+              52.262
+            ],
+            [
+              -113.815,
+              52.247
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "feature_id": "ZONE-E",
+        "synthetic": true,
+        "zone_name": "East service zone"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -113.788,
+              52.247
+            ],
+            [
+              -113.764,
+              52.247
+            ],
+            [
+              -113.764,
+              52.262
+            ],
+            [
+              -113.788,
+              52.262
+            ],
+            [
+              -113.788,
+              52.247
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "feature_id": "ZONE-S",
+        "synthetic": true,
+        "zone_name": "South service zone"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -113.815,
+              52.235
+            ],
+            [
+              -113.764,
+              52.235
+            ],
+            [
+              -113.764,
+              52.247
+            ],
+            [
+              -113.815,
+              52.247
+            ],
+            [
+              -113.815,
+              52.235
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

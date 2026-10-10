@@ -1,0 +1,2 @@
+baseline_setting,changed_setting,baseline_count,changed_count,affected_ids,decision_effect
+predicate=within,predicate=intersects,5,5,None; all five facility IDs retained the same zone assignment,No change to the conditional decision; legacy_access_paths remains quarantined and service_zones still needs a source-specific inventory record.

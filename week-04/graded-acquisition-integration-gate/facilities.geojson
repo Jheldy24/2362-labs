@@ -1,0 +1,95 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "feature_id": "FAC-001",
+        "synthetic": true,
+        "facility_name": "North Learning Centre",
+        "facility_type": "education",
+        "readiness": 82,
+        "incidents": 4
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.806,
+          52.252
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "feature_id": "FAC-002",
+        "synthetic": true,
+        "facility_name": "Central Operations Hub",
+        "facility_type": "operations",
+        "readiness": 64,
+        "incidents": 11
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.789,
+          52.254
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "feature_id": "FAC-003",
+        "synthetic": true,
+        "facility_name": "East Community Hall",
+        "facility_type": "community",
+        "readiness": 73,
+        "incidents": 7
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.773,
+          52.249
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "feature_id": "FAC-004",
+        "synthetic": true,
+        "facility_name": "South Storage",
+        "facility_type": "warehouse",
+        "readiness": 55,
+        "incidents": 15
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.798,
+          52.241
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "feature_id": "FAC-005",
+        "synthetic": true,
+        "facility_name": "Riverside Office",
+        "facility_type": "office",
+        "readiness": 91,
+        "incidents": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.781,
+          52.242
+        ]
+      }
+    }
+  ]
+}

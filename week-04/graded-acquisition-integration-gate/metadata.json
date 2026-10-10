@@ -1,0 +1,44 @@
+{
+  "course": "AIDA 2362",
+  "week": 4,
+  "topic": "Spatial-Data Acquisition, Quality, and Metadata",
+  "decision_question": "Decide whether a facility-access dataset is integration-ready.",
+  "scenario": "Fictional municipal facilities maintenance",
+  "synthetic_data": true,
+  "source_view": "course-scoped synthetic data; not a live operational export",
+  "snapshot_label": "aida2362-week-04-v2",
+  "crs": {
+    "storage": "EPSG:4326",
+    "analysis": "EPSG:32612 where metric distance or area is required",
+    "warning": "Verify area of use and units before analysis."
+  },
+  "licence": "CC0-1.0 for the clearly fictional course-generated records; official documentation retains its own terms.",
+  "provenance": {
+    "publisher": "AIDA 2362 instructional production",
+    "generated": "2026-08-13",
+    "method": "deterministic scripted synthesis",
+    "external_personal_data": false
+  },
+  "privacy_review": "No real people, households, clients, cultural places, or precise sensitive locations. Do not substitute real sensitive locations without authorization and review.",
+  "governance": "OCAP is First Nations-specific. CARE is a high-level complement. Community or Indigenous data require the relevant Nation/community authority and locally specific protocols.",
+  "accessibility": "Expected outputs require a title, legend or key, scale/context, colour-independent meaning, and a text/table equivalent.",
+  "files": [
+    "facilities.geojson",
+    "service_zones.geojson",
+    "source_inventory.csv",
+    "README.md",
+    "workflow.py",
+    "test_example.py",
+    "qgis-project.qgz"
+  ],
+  "authoritative_sources": {
+    "qgis": "https://docs.qgis.org/3.44/en/docs/user_manual/",
+    "crs": "https://docs.qgis.org/3.44/en/docs/user_manual/working_with_projections/working_with_projections.html",
+    "processing": "https://docs.qgis.org/3.44/en/docs/user_manual/processing_algs/",
+    "metadata": "https://natural-resources.canada.ca/earth-sciences/geomatics/canadas-spatial-data-infrastructure/standards-policies/8912",
+    "wcag": "https://www.w3.org/TR/WCAG22/",
+    "privacy": "https://www.priv.gc.ca/en/opc-actions-and-decisions/advice-to-parliament/2022/parl_sub_220301/",
+    "ocap": "https://fnigc.ca/ocap-training/",
+    "care": "https://www.gida-global.org/care-principles-copy"
+  }
+}
